@@ -115,7 +115,37 @@
 
 ---
 
-## 4. Conversión a duración
+## 4. Estimación de duración total del proyecto
+
+> El esfuerzo calculado (2652 hs) fue redondeado a **2700 hs** para incorporar una reserva de contingencia que absorba variaciones menores no contempladas en la estimación.
+
+### Cálculo
+
+$$
+\text{Semanas} = \frac{\text{Esfuerzo total}}{\text{Hs/día} \times \text{Días/semana}} = \frac{2700 \text{ hs}}{8 \text{ hs/día} \times 5 \text{ días/semana}} = \frac{2700}{40} = \textbf{67,5} \approx \textbf{68 semanas}
+$$
+
+$$
+\text{Meses} = \frac{68 \text{ semanas}}{4 \text{ semanas/mes}} \approx \textbf{17 meses}
+$$
+
+### Supuestos del cálculo
+
+| Parámetro | Valor | Justificación |
+|-----------|:-----:|---------------|
+| Esfuerzo base estimado | 2652 hs | Suma de estimaciones PERT y Delphi |
+| Esfuerzo redondeado | **2700 hs** | Redondeo con reserva de contingencia |
+| Jornada laboral | **8 hs/día** | Jornada estándar |
+| Días hábiles por semana | **5 días** | Lunes a viernes |
+| Horas productivas por semana | **40 hs/semana** | 8 hs × 5 días |
+| Semanas totales | **≈ 68 semanas** | 2700 / 40 |
+| **Duración estimada** | **≈ 17 meses** | 68 semanas / 4 sem. por mes |
+
+> ⚠️ **Nota:** Esta estimación asume un único recurso a dedicación completa. Si el equipo trabaja en paralelo sobre distintos módulos, la duración real del calendario se reducirá proporcionalmente al grado de paralelismo efectivo alcanzado.
+
+---
+
+## 5. Conversión a duración
 
 > **Fórmula:** Duración (días) = Esfuerzo (hs) / (Recursos asignados × Dedicación × Hs laborales/día)
 > 
@@ -128,3 +158,4 @@
 ---
 
 *Cátedra Gestión de Proyectos · FIUNER · 2026*
+
